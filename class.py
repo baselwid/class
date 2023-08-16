@@ -30,7 +30,7 @@ class Studint:
        return f'name is{self.name} and age {self.age} and grade{self.grade}and city{self.city}and speacialise{self.speacialise}'
     def talk(self):
         return f'hello my name is {self.name}'
-    def addCorse(self, newCoures):
+    def addCourse(self, newCoures):
        return f'hello{self.name} you have added{newCoures}to youer coures'
 
 students=[]
@@ -47,21 +47,26 @@ while True:
 
          username=input('enter th name  ')
          password=input('enter the password  ')
-         for i in range(len(students)):
-            if students[i].name==username and students[i].password==password:
-                print('your are logged in succesfully')
-                print(students[i])
-                break
-            
-            else:
-                print('wrong username or password')
-                #  OR
-        # for student in students:
-        #      if student.name==username and student.password==password:
+        #  for i in range(len(students)):
+        #     if students[i].name==username and students[i].password==password:
         #         print('your are logged in succesfully')
-        #         print(student)
+        #         print(students[i])
         #         break
-
+            
+        #     else:
+        #         print('wrong username or password')
+                #  OR
+        for student in students:
+             if student.name==username and student.password==password:
+                print('your are logged in succesfully')
+                print(student)
+                print('1-add course')
+                print('2-take quiz')
+                # studentChoice=int(input('enter the choice'))
+                # if studentChoic== 1:
+                #     studint1.addCourse(input('enter the course name:'))
+             else:
+                  print('wrong username or password')
 
 
     
