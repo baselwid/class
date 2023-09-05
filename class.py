@@ -18,73 +18,143 @@
 
 
 
-class Studint:
-    def __init__(self,Name='defult',Age=18,Grade=1,City='irbid',Speacialise='computer',passowrd='123456'):
-        self.name=Name
-        self.age=Age
-        self.grade=Grade
-        self.city=City
-        self.speacialise=Speacialise
-        self.password=passowrd
-    def __str__(self):
-       return f'name is{self.name} and age {self.age} and grade{self.grade}and city{self.city}and speacialise{self.speacialise}'
-    def talk(self):
-        return f'hello my name is {self.name}'
-    def addCourse(self, newCoures):
-       return f'hello{self.name} you have added{newCoures}to youer coures'
+# class Studint:
+#     def __init__(self,Name='defult',Age=18,Grade=1,City='irbid',Speacialise='computer',passowrd='123456'):
+#         self.name=Name
+#         self.age=Age
+#         self.grade=Grade
+#         self.city=City
+#         self.speacialise=Speacialise
+#         self.password=passowrd
+#     def __str__(self):
+#        return f'name is{self.name} and age {self.age} and grade{self.grade}and city{self.city}and speacialise{self.speacialise}'
+#     def talk(self):
+#         return f'hello my name is {self.name}'
+#     def addCourse(self, newCoures):
+#        return f'hello{self.name} you have added{newCoures}to youer coures'
 
-students=[]
-while True:
+# students=[]
+# while True:
 
-    print('welcome to programe')
-    print('1-login')
-    print('2-register')
-    print('3-exit')
-    userchoice=int(input('emter the choice'))
-    if userchoice ==1:
-        print('welcome to our longin page')
-        while True:
+#     print('welcome to programe')
+#     print('1-login')
+#     print('2-register')
+#     print('3-exit')
+#     userchoice=int(input('emter the choice'))
+#     if userchoice ==1:
+#         print('welcome to our longin page')
+#         while True:
 
-         username=input('enter th name  ')
-         password=input('enter the password  ')
-        #  for i in range(len(students)):
-        #     if students[i].name==username and students[i].password==password:
-        #         print('your are logged in succesfully')
-        #         print(students[i])
-        #         break
+#          username=input('enter th name  ')
+#          password=input('enter the password  ')
+#         #  for i in range(len(students)):
+#         #     if students[i].name==username and students[i].password==password:
+#         #         print('your are logged in succesfully')
+#         #         print(students[i])
+#         #         break
             
-        #     else:
-        #         print('wrong username or password')
-                #  OR
-        for student in students:
-             if student.name==username and student.password==password:
-                print('your are logged in succesfully')
-                print(student)
-                print('1-add course')
-                print('2-take quiz')
+#         #     else:
+#         #         print('wrong username or password')
+#                 #  OR
+#         for student in students:
+#              if student.name==username and student.password==password:
+#                 print('your are logged in succesfully')
+#                 print(student)
+#                 print('1-add course')
+#                 print('2-take quiz')
                 # studentChoice=int(input('enter the choice'))
                 # if studentChoic== 1:
                 #     studint1.addCourse(input('enter the course name:'))
-             else:
-                  print('wrong username or password')
+    #          else:
+    #               print('wrong username or password')
 
 
     
-    elif userchoice==2:
-        print('hello my programe')
-        name=input('enter the name  ')
-        age=int(input('enter the age  '))
-        grade=int(input('enter the grade  '))
-        city=input('enter the city  ')
-        speacialise=input('enter the speacialise  ')
-        password=input('enter the password  ')
-        studint1=Studint(name,age,grade,city,speacialise)
-        print("information added succes")
-        print("added new croues")
-        coures=input('enter the coures  ')
-        print(studint1. addCorse(coures))
-        print(studint1)
-        students.append(studint1)
-        print(students)
-    elif userchoice==3:
-        break
+    # elif userchoice==2:
+    #     print('hello my programe')
+    #     name=input('enter the name  ')
+    #     age=int(input('enter the age  '))
+    #     grade=int(input('enter the grade  '))
+    #     city=input('enter the city  ')
+    #     speacialise=input('enter the speacialise  ')
+    #     password=input('enter the password  ')
+    #     studint1=Studint(name,age,grade,city,speacialise)
+    #     print("information added succes")
+    #     print("added new croues")
+    #     coures=input('enter the coures  ')
+    #     print(studint1. addCorse(coures))
+    #     print(studint1)
+    #     students.append(studint1)
+    #     print(students)
+    # elif userchoice==3:
+    #     break
+
+# myAwesomeList=["one","two","one",1,100.5,True]
+# print(myAwesomeList)
+# print(myAwesomeList[1])
+# print(myAwesomeList[1:3])
+# print(myAwesomeList[:3])
+# print(type(myAwesomeList[:3]))
+# print(myAwesomeList[-2])
+# myAwesomeList[0:4]=[]
+# print(myAwesomeList)
+#append()
+myfrind=["ali","ahmed","hetham"]
+myoldfrind=["hamzeh","hashem","anas"]
+myfrind.append("sameer")
+# myfrind.append(myoldfrind)
+
+
+print(myfrind)
+# print(myfrind[4][0])
+
+#extend()
+myfrind.extend(myoldfrind)
+print(myfrind)
+#remove()
+myfrind.remove("ali")
+print(myfrind)
+#sort()
+a=[23,2,45,33,6,8,2,-1,5,-5,-4,6,-6]
+a.sort()
+print(a)
+a.sort(reverse=True)
+print(a)
+#clear()
+s=[1,2,3,4,5]
+s.clear()
+print(s)
+# copy()
+f=[2,3,4,5,6,7]
+d=f
+print(d)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
